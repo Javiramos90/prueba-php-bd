@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(204, 209, 255, 0.616);
+}
+h1{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 4px -3px rgba(0, 0, 0, 0.75 );
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.listado-peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+.pelicula{
+margin: 1rem;
+padding: 1rem;
+background-color: aliceblue;
+border-radius: 0.3rem;
+box-shadow: 3px 3px 4px -3px rgba(0, 0, 0, 0.75 );
+}
+.precio{
+    color: rgb(163, 17, 151);
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 0.5rem auto ;
+    display: block;
+    text-align: center;
+    border: none;
+}
+
+button:hover{
+    background-color: greenyellow;
+}
+
+.eliminar{
+    background-color: red;
+}
+
+.eliminar:hover{
+    background-color: brown;
+}
+
+table{
+border:none;
+width: 60%;
+margin: auto;
+font-size: 1.5rem;
+border-collapse: collapse;
+padding: 5px;
+}
+
+table th, table td{
+    border: none;
+   text-align: center;
+
+}
+
+tr:nth-child(even){
+background-color: rgb(51, 62, 114);
+color: white;
+}
+
+table th{
+    padding: 10px;;
+}
+thead{
+    background-color: rgb(202, 160, 241);
+}
+.formulario-creacion{
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px ;
+    background-color: cadetblue;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.campo-form input{
+    margin: 0.2rem auto;
+    padding: 0.2rem;
+    width: 60%;
+}
+.verMas{
+    background-color: blue;
+    color: white;
+    margin: auto;    
+}
+.sub-formulario{
+    display: block;
+}
+
+select{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
