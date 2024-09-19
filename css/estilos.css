@@ -19,6 +19,7 @@ h1{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 .listado-peliculas{
     display: flex;
@@ -94,6 +95,8 @@ thead{
     margin: 0 auto;
     padding: 10px ;
     background-color: cadetblue;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 4px -3px rgba(0, 0, 0, 0.75 );
 }
 
 .campo-form{
@@ -113,6 +116,18 @@ thead{
     color: white;
     margin: auto;    
 }
+.verMas:hover{
+    background-color: rgb(112, 114, 250);
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    margin: 20px auto;
+    padding: 5px 150px;
+    box-shadow: 3px 3px 4px -3px rgba(0, 0, 0, 0.75 );
+}
+
 .sub-formulario{
     display: block;
 }
@@ -121,5 +136,8 @@ select{
     width: 60%;
     margin: 20px auto;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
 }

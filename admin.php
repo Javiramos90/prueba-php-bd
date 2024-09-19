@@ -1,7 +1,6 @@
 <?php
-require 'includes/funciones.php';
+require 'includes/funciones_peliculas.php';
 $consulta = obtener_peliculas();
-$insetar =  setPelicula();
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +29,16 @@ $insetar =  setPelicula();
             </thead>
             <?php 
             while($datos = mysqli_fetch_assoc($consulta)):?>
-             <tr>
+             <tr id="fila<?php echo $pelicula['id'];?>">
                 <td><?php echo htmlspecialchars($datos['id'])?></td>
                  <td><?php echo htmlspecialchars($datos['titulo'])?></td>
                  <td class ="precio"> <b><?php echo htmlspecialchars($datos['precio'])?> €</b></td>
-                 <td><button class="eliminar"><b>Eliminar</b></button></td>
-                 <td><button><b>Modificar</b></button></td>
+                 <td class="td-icono"><button class="btn-eliminar" data-nombre = "<?php echo $datos['titulo'];?>" data-id = <?php echo $datos['id'];?>><b>Eliminar</b></button></td>
+                 <td><button 
+                 class="btn-modificar" 
+                 data-nombre = <?php echo $datos['titulo'];?>
+                 data-id ="<?php echo $datos['id'];?>" 
+                 <b>Modificar</b></button></td>
             </tr>
                
             <?php endwhile;?>
@@ -81,11 +84,15 @@ $insetar =  setPelicula();
                 <button>Ver mas</button>
             </section> -->
         </div>
+
     </main>
     <footer>
 
 
     </footer>
+    <script src="js/admin.js"></script>
 </body>
 
 </html>
+<!-- $datos['id']?>><b>Eliminar</b></button></td>
+                 <td><button><b>Modificar</b></button></td> -->
